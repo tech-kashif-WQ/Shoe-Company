@@ -1,0 +1,205 @@
+/* For Large Screen */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar */
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.nav-logo {
+  width: 76px;
+  height: 42.75px;
+}
+
+.nav-links {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+
+.list {
+  display: flex;
+  list-style: none;
+  gap: 24px;
+}
+
+.list li {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.nav-btn {
+  padding: 6px 16px;
+  background-color: #d01c28;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* Content */
+
+.container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.first-box,
+.second-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  text-align: center; /* Center text for smaller screens */
+}
+
+.title {
+  font-size: 3rem;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+.desc {
+  color: #5a5959;
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center buttons on smaller screens */
+}
+
+.shop-now,
+.category {
+  padding: 6px 16px;
+  font-size: 1.5rem;
+}
+
+.shop-now {
+  background-color: #d01c28;
+  color: white;
+}
+
+.category {
+  border: 1px solid black;
+  color: #5a5959;
+}
+
+.para {
+  font-size: 1rem;
+  color: #5a5959;
+  margin-top: 20px;
+}
+
+.images {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#facebook,
+#amazon {
+  width: 32px;
+  height: 32px;
+}
+
+.second-box img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Making It Responsive */
+
+/* Tablet */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0 10px;
+  }
+
+  .title {
+    font-size: 2.5rem;
+  }
+
+  .shop-now,
+  .category {
+    font-size: 1.25rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0;
+  }
+
+  .list {
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+  }
+
+  .content-wrapper {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .shop-now,
+  .category {
+    font-size: 1rem;
+  }
+
+  #facebook,
+  #amazon {
+    width: 24px;
+    height: 24px;
+  }
+}
